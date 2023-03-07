@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PPC Landing</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,230 +18,345 @@
   <body>
     <!-- Start Header -->
     <header>
-      <div class="logo">
-        <span>Property</span>
-        <span>TURKEY</span>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-7">
+            <a class="image navbar-brand">
+              <img
+                class="image-fluid"
+                src="./images/PT_Logo_Header.svg"
+                alt=""
+              />
+              <!-- <p>das</p> -->
+            </a>
+          </div>
+          <div class="col-5 col-lg-8">
+            <p>Since 2001</p>
+          </div>
+        </div>
       </div>
-      <p>Since 2001</p>
     </header>
     <!-- End Header -->
     <!-- Start Landing -->
     <section class="landing">
-      <div class="call-to-action">
-        <h2>Invest In Istambul For Max Returns</h2>
-        <p>Buy, Manage, Rent, @ Resell With Profit</p>
-        <button>Schedual Free Consoltation</button>
+      <div class="carousel-image">
+        <img
+          class="image"
+          src="./images/PPC_Apartments_Feature_Desktop1200.webp"
+          alt=""
+        />
+        <img
+          class="image"
+          src="./images/PPC_Apartments_Feature_Desktop650.webp"
+          alt=""
+        />
       </div>
+      <div class="caption-carousel">
+        <h2>
+          Invest In Istambul <br />
+          For Max Returns
+        </h2>
+        <p>Buy, Manage, Rent, & Resell With Profit</p>
+
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Schedual Free Consoltation
+        </button>
+      </div>
+      <!-- Start Features -->
+      <div class="features row">
+        <div class="col">Full Tax Shelter Available</div>
+        <div class="col">ROI Over 20% per Annum</div>
+        <div class="col">Easy Exit Within 5 Years</div>
+      </div>
+      <!-- End Features -->
     </section>
     <!-- End Landing -->
-    <!-- Start Features -->
-    <section class="features">
-      <p>Full Tax Shelter Available</p>
-      <p>ROI Over 20% per Annum</p>
-      <p>Easy Exit Within 5 Years</p>
-    </section>
-    <!-- End Features -->
     <!-- Start Homes -->
     <section class="homes">
-      <div class="home-card">
-        <h2>Sense Levent Designer Residences</h2>
-        <div class="card-info">
-          <div class="card-image">
-            <img
-              src="./images/houses/1562563755-property-in-istanbul-news_item_slider-t1562563755.jpg"
-              alt=""
-            />
-          </div>
-          <div class="card-text">
-            <div>
-              <h2>$164,900</h2>
-              <p>Levent, Istambul</p>
-              <p>1 Bed / 1 Bath</p>
-              <p>65 m2</p>
+      <div class="row">
+        <div class="home-card col-md-6 col-12">
+          <h2 class="col-12">Sense Levent Designer Residences</h2>
+          <div class="card-content">
+            <div class="card-image col-lg-8 col-8 col-md-7">
+              <img
+                src="./images/apt-list/Listing_1_Ist_Apt_Desktop.webp"
+                alt=""
+              />
             </div>
-            <button>Inquire</button>
+            <div class="card-text col-lg-4 col-4 col-md-5">
+              <div class="info">
+                <h2>$164,900</h2>
+                <p>Levent, Istambul</p>
+                <p>1 Bed / 1 Bath</p>
+                <p>65 m2</p>
+              </div>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Inquire
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="home-card">
-        <h2>Sense Levent Designer Residences</h2>
-        <div class="card-info">
-          <div class="card-image">
-            <img
-              src="./images/houses/1562565484-neighbourhood-in-istanbul-news_home_highlight_2-t1562565484.jpg"
-              alt=""
-            />
-          </div>
-          <div class="card-text">
-            <div>
-              <h2>$164,900</h2>
-              <p>kadidoy, Istanbul</p>
-              <p>2 Bed / 1 Bath</p>
-              <p>110 m2</p>
+        <div class="home-card col-md-6 col-12">
+          <h2 class="col-12">Sense Levent Designer Residences</h2>
+          <div class="card-content">
+            <div class="card-image col-lg-8 col-8 col-md-7">
+              <img
+                src="./images/apt-list/Listing_4_Ist_Apt_Desktop.webp"
+                alt=""
+              />
             </div>
-            <button>Inquire</button>
+            <div class="card-text col-lg-4 col-4 col-md-5">
+              <div class="info">
+                <h2>$164,900</h2>
+                <p>kadidoy, Istanbul</p>
+                <p>2 Bed / 1 Bath</p>
+                <p>110 m2</p>
+              </div>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Inquire
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="home-card">
-        <h2>Sense Levent Designer Residences</h2>
-        <div class="card-info">
-          <div class="card-image">
-            <img src="./images/houses/eyup_istanbul_property_2_1.jpg" alt="" />
-          </div>
-          <div class="card-text">
-            <div>
-              <h2>$164,900</h2>
-              <p>kadidoy, Istanbul</p>
-              <p>2 Bed / 1 Bath</p>
-              <p>110 m2</p>
+        <div class="home-card col-md-6 col-12">
+          <h2 class="col-12">Sense Levent Designer Residences</h2>
+          <div class="card-content">
+            <div class="card-image col-lg-8 col-8 col-md-7">
+              <img
+                src="./images/apt-list/Listing_2_Ist_Apt_Desktop.webp"
+                alt=""
+              />
             </div>
-            <button>Inquire</button>
+            <div class="card-text col-lg-4 col-4 col-md-5">
+              <div class="info">
+                <h2>$164,900</h2>
+                <p>kadidoy, Istanbul</p>
+                <p>2 Bed / 1 Bath</p>
+                <p>110 m2</p>
+              </div>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Inquire
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="home-card">
-        <h2>Sense Levent Designer Residences</h2>
-        <div class="card-info">
-          <div class="card-image">
-            <img src="./images/houses/istanbul-property.jpg" alt="" />
-          </div>
-          <div class="card-text">
-            <div>
-              <h2>$164,900</h2>
-              <p>kadidoy, Istanbul</p>
-              <p>2 Bed / 1 Bath</p>
-              <p>110 m2</p>
+        <div class="home-card col-md-6 col-12">
+          <h2 class="col-12">Sense Levent Designer Residences</h2>
+          <div class="card-content">
+            <div class="card-image col-lg-8 col-8 col-md-7">
+              <img
+                src="./images/apt-list/Listing_5_Ist_Apt_Desktop.webp"
+                alt=""
+              />
             </div>
-            <button>Inquire</button>
+            <div class="card-text col-lg-4 col-4 col-md-5">
+              <div class="info">
+                <h2>$164,900</h2>
+                <p>kadidoy, Istanbul</p>
+                <p>2 Bed / 1 Bath</p>
+                <p>110 m2</p>
+              </div>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Inquire
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="home-card">
-        <h2>Sense Levent Designer Residences</h2>
-        <div class="card-info">
-          <div class="card-image">
-            <img
-              src="./images/houses/properties-for-sale-in-istanbul7.jpg"
-              alt=""
-            />
-          </div>
-          <div class="card-text">
-            <div>
-              <h2>$164,900</h2>
-              <p>kadidoy, Istanbul</p>
-              <p>2 Bed / 1 Bath</p>
-              <p>110 m2</p>
+        <div class="home-card col-md-6 col-12">
+          <h2 class="col-12">Sense Levent Designer Residences</h2>
+          <div class="card-content">
+            <div class="card-image col-lg-8 col-8 col-md-7">
+              <img
+                src="./images/apt-list/Listing_3_Ist_Apt_Desktop.webp"
+                alt=""
+              />
             </div>
-            <button>Inquire</button>
+            <div class="card-text col-lg-4 col-4 col-md-5">
+              <div class="info">
+                <h2>$164,900</h2>
+                <p>kadidoy, Istanbul</p>
+                <p>2 Bed / 1 Bath</p>
+                <p>110 m2</p>
+              </div>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-card col-md-6 col-12">
+          <h2 class="col-12">Sense Levent Designer Residences</h2>
+          <div class="card-content">
+            <div class="card-image col-lg-8 col-8 col-md-7">
+              <img
+                src="./images/apt-list/Listing_6_Ist_Apt_Desktop.webp"
+                alt=""
+              />
+            </div>
+            <div class="card-text col-lg-4 col-4 col-md-5">
+              <div class="info">
+                <h2>$164,900</h2>
+                <p>kadidoy, Istanbul</p>
+                <p>2 Bed / 1 Bath</p>
+                <p>110 m2</p>
+              </div>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Inquire
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="home-card">
-        <h2>Sense Levent Designer Residences</h2>
-        <div class="card-info">
-          <div class="card-image">
-            <img
-              src="./images/houses/turkey-istanbul-houses-at-the-bosphorus-in-sariyer-LH000333.jpg"
-              alt=""
-            />
-          </div>
-          <div class="card-text">
-            <div>
-              <h2>$164,900</h2>
-              <p>kadidoy, Istanbul</p>
-              <p>2 Bed / 1 Bath</p>
-              <p>110 m2</p>
-            </div>
-            <button>Inquire</button>
-          </div>
-        </div>
-      </div>
-
       <div class="more-inquires">
-        <p>For Many More Listing Inquires With Us Today</p>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          FOR MANY MORE LISTINGS INQUIRE WITH US TODAY
+        </button>
       </div>
     </section>
     <!-- Start Homes -->
     <!-- Start Contact Section -->
     <section class="contact">
       <div class="contact-num">
-        <button>Contact Us</button>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Contact Us
+        </button>
         <p>+90 212 215 00 22</p>
       </div>
     </section>
     <!-- End Contact Section -->
-
-    <div class="row">
-      <!-- Start News Section -->
-      <section class="news">
-        <div class="news-card">
-          <div class="news-text">
-            <h3>Turkey's Economy in 2023: An Important Juncture in History</h3>
-            <p>1 Week Ago</p>
-          </div>
-          <div class="image">
-            <img
-              src="./images/houses/1562563755-property-in-istanbul-news_item_slider-t1562563755.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-text">
-            <h3>Top 10 Istanbul Views from Michelin Spotlighted Restaurants</h3>
-            <p>2 Week Ago</p>
-          </div>
-          <div class="image">
-            <img
-              src="./images/houses/1562565484-neighbourhood-in-istanbul-news_home_highlight_2-t1562565484.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-text">
-            <h3>Advantages to Growing Your Business In Turkey</h3>
-            <p>1 Month Ago</p>
-          </div>
-          <div class="image">
-            <img src="./images/houses/eyup_istanbul_property_2_1.jpg" alt="" />
-          </div>
-        </div>
-        <button>Read More Turkish Real Estate News</button>
-      </section>
-      <!-- End News Section -->
-      <!-- Start About Section -->
-      <section class="about">
-        <h2>
-          Property Turkey effortlessly opens the door to the Turkish real estate
-          market for our Investors.
-        </h2>
-        <p>
-          At Property Turkey we provide our foreign investors with many avenues
-          to profitability and positive returns by way of Turkish real estate.
-          We take the stress and guesswork out of investing in an unfamiliar
-          market. We make sure you can focus on making sound, well-informed
-          decisions instead of spending time filtering through foreign
-          procedures and the like.
-        </p>
-        <p>
-          You truly can earn passive investment income via Turkish real estate
-          utilizing our A-Z, One-Stop-Shop, all-encompassing ecosystem of real
-          estate professionals. Even if you are not ready to purchase properties
-          in full, we offer great exposure to the market through our PT Real
-          Estate Investment Fund. From news, to free consultations, we warmly
-          welcome you to Turkey.
-        </p>
-      </section>
-      <!-- End About Section -->
-    </div>
     <!-- Start Footer -->
-    <footer>Copyright @ 2023 Property Turkey Ltd, All Rights Reserved.</footer>
+    <footer>
+      <div class="row">
+        <div class="col-12">
+          Copyright @ 2023 Property Turkey Ltd, All Rights Reserved.
+        </div>
+      </div>
+    </footer>
     <!-- End Footer -->
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content bg-transparent">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="exit-button"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="popup">
+            <form class="row inquire-form">
+              <h2 class="modal-title">
+                <!-- Line From JavaScript Here -->
+              </h2>
+              <div class="col-12">
+                <div class="input-group input-group-lg">
+                  <input
+                    type="text"
+                    aria-label="Large"
+                    aria-describedby="inputGroup-sizing-sm"
+                    placeholder="Name"
+                  />
+                </div>
+                <!-- <div class="input-group input-group-lg"> -->
+                <!-- <input
+                    type="text"
+                    aria-label="Large"
+                    aria-describedby="inputGroup-sizing-sm"
+                    placeholder="Phone"
+                  /> -->
+                <div class="input-group mb-3">
+                  <button
+                    class="btn input-btn btn-outline-secondary"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    <img
+                      src="./images/flag-syria_1f1f8-1f1fe.png"
+                      width="30"
+                      alt=""
+                    />
+                    +963
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone"
+                    aria-label="Example text with button addon"
+                    aria-describedby="button-addon1"
+                  />
+                </div>
+                <!-- </div> -->
+                <div class="input-group input-group-lg">
+                  <input
+                    type="text"
+                    aria-label="Large"
+                    aria-describedby="inputGroup-sizing-sm"
+                    placeholder="Email"
+                  />
+                </div>
+                <!-- <input type="text" name="" id="" placeholder="Name" /> -->
+                <!-- <input type="text" name="" id="" placeholder="Phone" /> -->
+                <!-- <input type="text" name="" id="" placeholder="Email" /> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
 </html>
